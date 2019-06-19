@@ -1,5 +1,6 @@
 module.exports = {
   devServer: {
-    host: 'c1.dcnz.me'
+    // can be replaced on cmd with `vue serve --host dev2.kaido.team`
+    // host: 'dev2.kaido.team'
   }
 }
