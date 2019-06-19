@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "deploy": "rm -rf dist && yarn && yarn build --mode production && cd dist && touch .static && git init && git add -A && git commit -m init && git push dokku@dev2.kaido.team:js30 master:master -f"
   },
   "dependencies": {
     "muse-ui": "^3.0.1",

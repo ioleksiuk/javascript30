@@ -18,6 +18,9 @@
           <mu-list-item button>
             <mu-list-item-title>Day 2</mu-list-item-title>
           </mu-list-item>
+          <mu-list-item button to='/day5'>
+            <mu-list-item-title>Day 5</mu-list-item-title>
+          </mu-list-item>
         </mu-list>
       </mu-drawer>
     </mu-container>

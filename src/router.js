@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Drumkit from './views/Drumkit.vue'
+import FlexPanels from './views/FlexPanels.vue'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/day1',
       name: 'day1',
       component: Drumkit
+    },
+    {
+      path: '/day5',
+      name: 'day5',
+      component: FlexPanels
     },
     {
       path: '/about',
