@@ -4,6 +4,7 @@
   <div id="app" class="panels">
     <div
         class="panel panel1"
+        v-bind:class="{ 'open-active': isActive1 }"
         v-on:click="isActive1 = true">
         <p v-for="text in panel_1"> {{ text.p }} </p>
     </div>
@@ -43,16 +44,16 @@ export default {
   name: 'FlexPanels',
   data () {
     return {
-    panel_1: [{ p: 'Hey'}, {p:'Lets'}, {p:'Dance'}],
-    panel_2: [{ p: 'Give'},{p:'Take'}, {p:'Receive'}],
-    panel_3: [{ p: 'Experience'}, {p:'It'}, {p:'Today'}],
-    panel_4: [{ p: 'Give'}, {p:'All'}, {p:'You can'}],
-    panel_5: [{ p: 'Life'}, {p:'In'}, {p:'Motion'}],
-    isActive1: false,
-    isActive2: false,
-    isActive3: false,
-    isActive4: false,
-    isActive5: false
+      panel_1: [{ p: 'Hey' }, { p: 'Lets' }, { p: 'Dance' }],
+      panel_2: [{ p: 'Give' }, { p: 'Take' }, { p: 'Receive' }],
+      panel_3: [{ p: 'Experience' }, { p: 'It' }, { p: 'Today' }],
+      panel_4: [{ p: 'Give' }, { p: 'All' }, { p: 'You can' }],
+      panel_5: [{ p: 'Life' }, { p: 'In' }, { p: 'Motion' }],
+      isActive1: false,
+      isActive2: false,
+      isActive3: false,
+      isActive4: false,
+      isActive5: false
     }
   },
   props: {
